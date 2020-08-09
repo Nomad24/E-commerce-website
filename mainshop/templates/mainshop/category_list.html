@@ -1,0 +1,11 @@
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+       aria-haspopup="true" aria-expanded="false">
+        Categories
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        {% for item in categories %}
+        <a class="dropdown-item" href="{{ item.get_absolute_url }}">{{ item.title }}</a>
+        {% endfor %}
+    </div>
+</li>

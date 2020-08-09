@@ -1,0 +1,35 @@
+{% extends 'mainshop/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row">
+    <div class="col-lg-4">
+        <img style="border:1px solid #888" src="{{product.imageURL}}">
+    </div>
+
+    <div style="padding:50px" class="col-lg-4">
+
+        <h3>{{product.name}}</h3>
+        <hr>
+
+        <h2>Price: ${{product.price}}</h2>
+
+        <br>
+
+        <button data-product="{{product.id}}" data-action="add"
+                class="btn btn-outline-secondary add-btn update-cart">Add to Cart
+        </button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="jumbotron col-lg-12">
+        <h6 class="display-4">Information</h6>
+        <hr class="my-4">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium efficitur justo et consectetur. Praesent tempus tortor sodales tristique cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer sit amet velit ligula. Proin massa arcu, tristique et dapibus vitae, accumsan id nibh. Vivamus eget blandit ligula. Ut at bibendum ligula. Maecenas bibendum risus sit amet tellus gravida, et rhoncus tellus eleifend. Ut metus sapien, finibus a felis ac, cursus dignissim velit. Donec eget euismod tellus, in hendrerit erat. Fusce volutpat blandit tincidunt. Curabitur condimentum justo nec est porta, sed sodales lorem semper. Donec facilisis feugiat sapien, ut pellentesque sapien suscipit sit amet. Vivamus faucibus velit a elit posuere, ac tincidunt magna viverra. Maecenas eu mi varius, porttitor ex vel, malesuada quam. Cras vel libero scelerisque, pharetra purus ut, malesuada nisi.
+
+Ut in rutrum magna, vitae iaculis dui. Maecenas eu condimentum arcu, sed laoreet dolor. Morbi elementum mi quam, eget iaculis sem aliquet at. Maecenas eget massa massa. In efficitur eu justo at finibus. Fusce tempus dolor at diam dignissim lacinia. Donec nec tristique nibh. Integer at est id felis hendrerit rhoncus in vitae enim. Maecenas aliquam a diam quis fringilla. Suspendisse et venenatis justo. Mauris rhoncus suscipit dignissim.</p>
+    </div>
+</div>
+
+{% endblock content %}
